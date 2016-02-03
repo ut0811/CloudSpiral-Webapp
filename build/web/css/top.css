@@ -1,0 +1,40 @@
+.balloon {
+  font-size:14px;
+  position: relative;
+  width: 70px;
+  height: 20px;
+  background-color: #000;
+  text-align: center;
+}
+.balloon:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+#mover{
+	position: relative;
+	margin:0 auto;
+}
+#mover .poper{
+	content: "";
+	position: absolute;
+	top: 48%;
+	left: 48%;
+}
+#mover .poper2{
+	content: "";
+	position: absolute;
+	top: 48%;
+	left: 48.5%;
+}
+#canvas{
+	background-image: url("../image/back2.jpg");
+	background-size: cover;
+}

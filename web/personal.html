@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Page</title>
+
+    <link href="css/personal.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="image/fab.png">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<div class="navbar-brand"><img src="./image/emb2-2.png"></img></div>
+    		</div>
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav nav-font-size">
+      				<li id="top"><a class="text-shadow" href="./TopPage.html" >Top</a></li>
+        			<li id="personal"><a class="text-shadow" href="#" onclick="move('yuta');">MyPage</a></li>
+     		 	</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+
+  </head>
+  <body>
+	<div class="container" style="padding:20px 0;">
+		<div class="row">
+			<div id="side-bar" class="col-sm-2 blackwindow">
+				<div class="blackwindow"><img id="chara-img" class="img-responsive"></div>
+				<p id="personalName"></p>
+				<p id="Lv"></p>
+				<p id="NextExp"></p>
+				<p id="TotalExp"></p>
+				<p id="Gold"></p>
+				<p id="Rank"></p>
+				<p id="Batch"></p>
+				<!-- <button class="btn btn-warning">ガチャ</button>
+				<button class="btn btn-primary">TOPへ戻る</button> -->
+			</div>
+			<div id="main" class="col-sm-10">
+				<div id = "MissTicketInfo"></div>
+				<div id = "per-ticket" class="blackwindow">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="#tab1" data-toggle="tab">受注</a></li>
+						<li role="presentation"><a href="#tab2" data-toggle="tab">達成</a></li>
+						<li role="presentation"><a href="#tab3" data-toggle="tab">ログ</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<div class="tab_title">
+								<h4>着手中のチケット情報</h4>
+							</div>
+							<table class="table table-bordered table-hover">
+								<thead id="acceptTicketTableHead">
+								</thead>
+								<tbody id="acceptTicketTableBody">
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<div class="tab_title">
+								<h4>解決済みチケット情報</h4>
+							</div>
+							<table class="table table-bordered table-hover">
+								<thead id="fixedTicketTableHead">
+								</thead>
+								<tbody id="fixedTicketTableBody">
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane" id="tab3">
+							<div class="tab_title">
+								<h4 id="TicketLogTitle"></h4>
+							</div>
+							<table class="table table-bordered table-hover">
+								<thead id="logBoxHead">
+								</thead>
+								<tbody id="logBoxBody">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 id="tatujinRank" class="panel-title"></h3>
+					</div>
+					<div id="MeanEstErr" class="panel-body"></div>
+				</div>
+
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">ミスチケット</h3>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">マルチタスク</li>
+						<li class="list-group-item">入力忘れ</li>
+						<li class="list-group-item">終了忘れ</li>
+						<li class="list-group-item">総時間忘れ</li>
+					</ul>
+				</div> -->
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						バッチ
+					</div>
+					<div id="BatchDisplay" class="panel-body">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/personal.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

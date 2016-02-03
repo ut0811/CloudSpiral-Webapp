@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>cloudspiral</title>
+    <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/timeline</link>
+    <description>Trac Timeline</description>
+    <language>en-US</language>
+    <generator>Trac 1.0.8</generator>
+    <image>
+      <title>cloudspiral</title>
+      <url>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac_icon.png</url>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/timeline</link>
+    </image>
+    <item>
+      <title>Ticket #18 ([UC1]registeredEventList.htmlの作成) closed</title>
+      
+        <dc:creator>arisa</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:27:37 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/18#comment:3</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/18#comment:3/1446474457155154</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #10 ([UC1]EventModelの作成) closed</title>
+      
+        <dc:creator>dolly</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:24:42 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:5</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:5/1446474282555456</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #10 ([UC1]EventModelの作成) reopened</title>
+      
+        <dc:creator>dolly</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:24:04 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:3</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:3/1446474244568551</guid>
+      <description></description>
+      <category>reopenedticket</category>
+    </item><item>
+      <title>Ticket #7 ([UC1]TicketModelの作成) closed</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:23:11 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/7#comment:4</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/7#comment:4/1446474191001889</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #4 ([UC1]RegisterSeatCategoryControllerの作成) closed</title>
+      
+        <dc:creator>y-furuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:22:38 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/4#comment:3</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/4#comment:3/1446474158397810</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #10 ([UC1]EventModelの作成) closed</title>
+      
+        <dc:creator>dolly</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 14:21:06 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:2</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10#comment:2/1446474066620388</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #21 ([UC1]結合テストのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:59:45 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/21</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/21/1446472785457856</guid>
+      <description>&lt;p&gt;
+結合テストのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #20 ([UC1]結合テストのテスト) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:59:21 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/20</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/20/1446472761539977</guid>
+      <description>&lt;p&gt;
+結合テストのテスト&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #19 ([UC1]registeredEventList.htmlのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:58:37 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/19</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/19/1446472717313925</guid>
+      <description>&lt;p&gt;
+registeredEventList.htmlのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #18 ([UC1]registeredEventList.htmlの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:58:12 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/18</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/18/1446472692015461</guid>
+      <description>&lt;p&gt;
+registeredEventList.htmlの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #17 ([UC1]dwr.xmlのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:57:06 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/17</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/17/1446472626054454</guid>
+      <description>&lt;p&gt;
+dwr.xmlのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #16 ([UC1]dwr.xmlの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:56:37 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/16</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/16/1446472597645032</guid>
+      <description>&lt;p&gt;
+dwr.xmlの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #15 ([UC1]RegisteringSeatCategoryFormのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:55:39 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/15</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/15/1446472539055256</guid>
+      <description>&lt;p&gt;
+RegisteringSeatCategoryFormのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #14 ([UC1]RegisteringSeatCategoryFormのテスト) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:55:17 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/14</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/14/1446472517674232</guid>
+      <description>&lt;p&gt;
+RegisteringSeatCategoryFormのテスト&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #13 ([UC1]RegisteringSeatCategoryFormの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:54:44 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/13</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/13/1446472484196262</guid>
+      <description>&lt;p&gt;
+RegisteringSeatCategoryFormの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #12 ([UC1]EventModelのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:53:46 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/12</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/12/1446472426006849</guid>
+      <description>&lt;p&gt;
+EventModelのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #11 ([UC1]EventModelのテスト) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:53:04 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/11</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/11/1446472384930615</guid>
+      <description>&lt;p&gt;
+EventModelのテスト&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #10 ([UC1]EventModelの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:52:14 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/10/1446472334583641</guid>
+      <description>&lt;p&gt;
+EventModelの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #9 ([UC1]TicketModelのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:51:06 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/9</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/9/1446472266080813</guid>
+      <description>&lt;p&gt;
+TicketModelのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #8 ([UC1]TicketModelのテスト) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:50:33 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/8</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/8/1446472233045837</guid>
+      <description>&lt;p&gt;
+TicketModelのテスト&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #7 ([UC1]TicketModelの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:50:07 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/7</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/7/1446472207671697</guid>
+      <description>&lt;p&gt;
+TicketModelの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #6 ([UC1]RegisterSeatCategoryControllerのレビュー) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:35:04 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/6</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/6/1446471304337385</guid>
+      <description>&lt;p&gt;
+RegisterSeatCategoryControllerのレビュー&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #5 ([UC1]RegisterSeatCategoryControllerのテスト) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:34:16 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/5</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/5/1446471256909338</guid>
+      <description>&lt;p&gt;
+RegisterSeatCategoryControllerのテスト&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #4 ([UC1]RegisterSeatCategoryControllerの作成) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 02 Nov 2015 13:33:28 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/4</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/4/1446471208638429</guid>
+      <description>&lt;p&gt;
+RegisterSeatCategoryControllerの作成&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #3 (crontabの設定) closed</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 26 Oct 2015 03:50:11 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/3#comment:1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/3#comment:1/1445831411224377</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #3 (crontabの設定) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Mon, 26 Oct 2015 03:49:59 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/3</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/3/1445831399326177</guid>
+      <description>&lt;p&gt;
+crontabでデータベースの中身を更新する&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #2 (test2) closed</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Fri, 23 Oct 2015 07:37:33 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/2#comment:1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/2#comment:1/1445585853488402</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #2 (test2) created</title>
+      
+        <dc:creator>yuta</dc:creator>
+
+      <pubDate>Fri, 23 Oct 2015 07:37:22 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/2</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/2/1445585842989736</guid>
+      <description>&lt;p&gt;
+てすと&lt;br /&gt;
+&lt;/p&gt;
+</description>
+      <category>newticket</category>
+    </item><item>
+      <title>Ticket #1 (Test) closed</title>
+      
+        <dc:creator>y-furuta</dc:creator>
+
+      <pubDate>Sat, 17 Oct 2015 05:41:00 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/1#comment:2</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/1#comment:2/1445060460318410</guid>
+      <description>fixed</description>
+      <category>closedticket</category>
+    </item><item>
+      <title>Ticket #1 (Test) created</title>
+      
+        <dc:creator>dolly</dc:creator>
+
+      <pubDate>Fri, 16 Oct 2015 07:04:26 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/ticket/1/1444979066788491</guid>
+      <description></description>
+      <category>newticket</category>
+    </item><item>
+      <title>SandBox created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/SandBox?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/SandBox?version=1/1444464334054141</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracRepositoryAdmin created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracRepositoryAdmin?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracRepositoryAdmin?version=1/1444464334053779</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracUpgrade created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracUpgrade?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracUpgrade?version=1/1444464334053363</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracBackup created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracBackup?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracBackup?version=1/1444464334053010</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>WikiRestructuredText created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiRestructuredText?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiRestructuredText?version=1/1444464334052680</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>WikiNewPage created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiNewPage?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiNewPage?version=1/1444464334052358</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracPlugins created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracPlugins?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracPlugins?version=1/1444464334051963</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracLinks created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracLinks?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracLinks?version=1/1444464334051560</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracAdmin created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracAdmin?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracAdmin?version=1/1444464334051231</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TicketQuery created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TicketQuery?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TicketQuery?version=1/1444464334050934</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracCgi created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracCgi?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracCgi?version=1/1444464334050570</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>WikiDeletePage created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiDeletePage?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiDeletePage?version=1/1444464334050244</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracModWSGI created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracModWSGI?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracModWSGI?version=1/1444464334049912</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracFineGrainedPermissions created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracFineGrainedPermissions?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracFineGrainedPermissions?version=1/1444464334049521</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>RecentChanges created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/RecentChanges?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/RecentChanges?version=1/1444464334049184</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracTickets created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracTickets?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracTickets?version=1/1444464334048879</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracQuery created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracQuery?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracQuery?version=1/1444464334048530</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracGuide created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracGuide?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracGuide?version=1/1444464334048207</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>WikiFormatting created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiFormatting?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/WikiFormatting?version=1/1444464334047817</guid>
+      <description></description>
+      <category>wiki</category>
+    </item><item>
+      <title>TracInterfaceCustomization created</title>
+      
+        <dc:creator>trac</dc:creator>
+
+      <pubDate>Sat, 10 Oct 2015 08:05:34 GMT</pubDate>
+      <link>http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracInterfaceCustomization?version=1</link>
+      <guid isPermaLink="false">http://ec2-52-69-42-30.ap-northeast-1.compute.amazonaws.com/trac/wiki/TracInterfaceCustomization?version=1/1444464334047404</guid>
+      <description></description>
+      <category>wiki</category>
+    </item>
+   </channel>
+</rss>

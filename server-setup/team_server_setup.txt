@@ -1,0 +1,168 @@
+/////////■ CloudSpiral後期分散PBL
+/////////■ 前期相当のチームサーバセットアップ手順書
+/////////■ 
+/////////■ ※注意事項
+/////////■ CUI上でのエディタ操作が必須 (vi, emacs, nano等)
+/////////■ 
+/////////■                             2015/08/29 sachio
+
+/////////■まずは何はともあれupdate
+$ sudo yum update -y
+
+/////////■trac + svnに必要なパッケージのインストール
+$ sudo yum install -y httpd subversion mod_python27 mod_dav_svn subversion-python27
+
+/////////■tracインストール（よくサーバが落ちているので成功しているかどうか要確認）
+$ sudo easy_install Trac==1.0.8
+
+/////////■tracプラグインのインストール
+$ sudo easy_install https://trac-hacks.org/svn/timingandestimationplugin/branches/trac1.0/
+$ sudo mkdir -p /tmp/trac/ticketsubmitpolicy
+$ cd /tmp/trac/ticketsubmitpolicy
+$ sudo svn co http://svn.sourceforge.jp/svnroot/shibuya-trac/plugins/ticketsubmitpolicy/trunk;
+$ cd /tmp/trac/ticketsubmitpolicy/trunk;
+$ sudo python setup.py install
+$ sudo easy_install https://trac-hacks.org/svn/epochfieldplugin/0.12
+$ sudo easy_install https://trac-hacks.org/svn/customfieldadminplugin/0.11/
+$ sudo rm -rf /tmp/trac
+
+/////////■tracとsvnで使うユーザのアカウントcloudの作成，パスワードの入力を求められる（名前は任意）
+$ sudo htpasswd -c /etc/httpd/.htpasswd cloud
+
+/////////■Subversionリポジトリ作成
+$ sudo svnadmin create /var/www/svn
+$ sudo chown -R apache.apache /var/www/svn
+
+/////////■http経由でのsvnアクセスの設定（subversion.confの最後に追記）
+/////////$ sudo vi /etc/httpd/conf.d/subversion.conf
+/////////ここから-----------------------------------------------------
+<Location /svn>
+    DAV svn
+    SVNPath /var/www/svn
+    AuthType Basic
+    AuthName "Cloud Spiral"
+    AuthUserFile /etc/httpd/.htpasswd
+    Require valid-user
+</Location>
+/////////-----------------------------------------------------ここまで
+
+
+/////////■tracでプロジェクト作成
+$ sudo /usr/local/bin/trac-admin /var/www/trac initenv "cloudspiral" sqlite:db/trac.db svn /var/www/svn
+$ sudo chown -R apache.apache /var/www/trac
+$ sudo chmod 755 /var/www/trac/conf/trac.ini
+$ sudo mkdir /var/www/.python-eggs
+$ sudo chown apache.apache /var/www/.python-eggs
+$ sudo chmod 755 /var/www/.python-eggs
+
+/////////■ユーザ(cloud)をTracの管理者として設定する
+$ sudo -u apache /usr/local/bin/trac-admin /var/www/trac permission add cloud TRAC_ADMIN
+
+/////////■Tracプラグインの有効化など（trac.iniの最後に追記）
+/////////$ sudo vi /var/www/trac/conf/trac.ini
+/////////ここから-----------------------------------------------------
+[components]
+customfieldadmin.* = enabled
+epochfield.filter.* = enabled
+talm_importer.importer.* = enabled
+ticketsubmitpolicy.* = enabled
+timingandestimationplugin.api.* = enabled
+tracrpc.* = enabled
+tracopt.ticket.clone.* = enabled
+tracopt.versioncontrol.svn.svn_fs.* = enabled
+tracopt.versioncontrol.svn.svn_prop.* = enabled
+
+[ticket-submit-policy]
+test.excludes = priority, version, billable, hours
+test.readonly = priority, version, billable, hours
+
+[ticket]
+restrict_owner = true
+
+[ticket-workflow]
+accept = new,assigned,accepted,reopened -> accepted
+accept.name = 着手する
+accept.operations = set_owner_to_self
+accept.permissions = TICKET_MODIFY
+leave = * -> *
+leave.default = 1
+leave.name = 変更しない
+leave.operations = leave_status
+reassign = new,assigned,accepted,reopened -> assigned
+reassign.name = 担当者変更
+reassign.operations = set_owner
+reassign.permissions = TICKET_MODIFY
+reopen = closed -> reopened
+reopen.name = 差し戻す
+reopen.operations = del_resolution
+reopen.permissions = TICKET_CREATE
+resolve = new,assigned,accepted,reopened -> closed
+resolve.name = 解決にする
+resolve.operations = set_resolution
+resolve.permissions = TICKET_MODIFY
+
+[ticket-custom]
+billable = checkbox
+billable.label = -
+billable.order = 6
+billable.value = 1
+enddate = text
+enddate.format = epoch
+enddate.label = 終了日時（Ctr+Homeで現在日時）
+enddate.order = 4
+enddate.value =
+estimatedhours = text
+estimatedhours.format = plain
+estimatedhours.label = 見積時間[単位：分] （例：2時間なら120と入力）
+estimatedhours.order = 1
+estimatedhours.value = 0
+hours = text
+hours.format = plain
+hours.label = -
+hours.order = 5
+hours.value = 0
+startdate = text
+startdate.format = epoch
+startdate.label = 開始日時（Ctr+Homeで現在日時）
+startdate.order = 2
+startdate.value =
+totalhours = text
+totalhours.format = plain
+totalhours.label = 総時間[単位：分] （例：1時間半なら90と入力）
+totalhours.order = 3
+totalhours.value = 0
+/////////-----------------------------------------------------ここまで
+
+
+/////////■プラグインの関係でプロジェクトを一旦upgrade
+$ sudo -u apache /usr/local/bin/trac-admin /var/www/trac upgrade
+
+
+/////////■httpdとtracの連携（trac.confを新規作成して追記）
+/////////$ sudo vi /etc/httpd/conf.d/trac.conf
+/////////ここから-----------------------------------------------------
+<Location /trac>
+    SetHandler mod_python
+    PythonHandler trac.web.modpython_frontend
+    PythonOption TracEnv /var/www/trac
+    PythonOption TracUriRoot /trac
+    AuthType Basic
+    AuthName "Cloud Spiral"
+    AuthUserFile /etc/httpd/.htpasswd
+    Require valid-user
+</Location>
+/////////-----------------------------------------------------ここまで
+
+
+/////////■システムの時刻をJSTに変更（clockファイルを新規作成して追記）
+$ sudo sh -c "echo -e \"ZONE='Asia/Tokyo'\nUTF=False\" > /etc/sysconfig/clock"
+$ sudo cp -p /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+ 
+/////////■起動時に自動的にapacheが立ち上がる設定
+$ sudo chkconfig httpd on
+
+/////////■変更を有効化するために再起動
+$ sudo reboot
+
+
+/////////■ブラウザで http://<dns名>/trac にアクセスする

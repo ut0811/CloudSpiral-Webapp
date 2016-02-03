@@ -1,0 +1,51 @@
+////////// Tomcat
+// tomcatのインストール
+$ sudo yum install tomcat7 tomcat7-webapps
+
+// ポート80へのアクセスをポート8080へリダイレクトさせる（立命館ファイアウォールの回避）
+$ sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
+$ sudo iptables-save
+
+// tomcatがポート80経由でアクセスされていることを認識させる
+// ★絶対にコピペすること! 間違い厳禁
+$ sudo sed -i 's/"8443"/"8443" proxyPort="80"/' /usr/share/tomcat7/conf/server.xml
+
+// Tomcatの細かい設定（クロスドメインアクセスの許可，CORSフィルタを入れる）
+$ sudo wget -O /usr/share/tomcat7/lib/cors-filter-2.1.2.jar http://search.maven.org/remotecontent?filepath=com/thetransactioncompany/cors-filter/2.1.2/cors-filter-2.1.2.jar
+$ sudo wget -O /usr/share/tomcat7/lib/java-property-utils-1.9.1.jar http://search.maven.org/remotecontent?filepath=com/thetransactioncompany/java-property-utils/1.9.1/java-property-utils-1.9.1.jar
+
+$ sudo sed -i 's#</web-app>##' /usr/share/tomcat7/conf/web.xml
+$ sudo echo "   <filter>
+          <filter-name>CORS</filter-name>
+          <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+   </filter>
+   <filter-mapping>
+          <filter-name>CORS</filter-name>
+          <url-pattern>/*</url-pattern>
+   </filter-mapping>
+</web-app>" | sudo tee -a /usr/share/tomcat7/conf/web.xml
+
+
+// Tomcatの自動起動設定と今回の手動起動
+$ sudo chkconfig tomcat7 on
+$ sudo service tomcat7 start
+
+// 手元PCのブラウザから，http://EC2のパブリックDNS名/ でアクセスする
+// 気持ち悪いネコが見えたら成功
+// 見えなかったら教員を呼ぶこと
+
+
+////////// MongoDB
+// Mongoをインストールのためのリポジトリの設定
+// ★以下5行（sudo～repo）を丸ごとコピペすること!
+$ sudo echo "[MongoDB]
+name=MongoDB Repository
+baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64
+gpgcheck=0
+enabled=1" | sudo tee -a /etc/yum.repos.d/mongodb.repo
+
+// MongoDBインストール
+$ sudo yum install mongodb-org
+
+// MongoDB起動
+$ sudo service mongod start
